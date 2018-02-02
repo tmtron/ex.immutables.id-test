@@ -1,4 +1,4 @@
-# ex.immutables.id-test
+# Immutables: ValueObjects and DomainObjects 
 Using [immutables](https://immutables.github.io/) for ValueObjects and DomainObjects
 
 ## Implementation
