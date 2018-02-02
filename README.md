@@ -1,6 +1,8 @@
 # Immutables: ValueObjects and DomainObjects 
 Using [immutables](https://immutables.github.io/) for ValueObjects and DomainObjects
 
+[![Build Status](https://travis-ci.org/tmtron/ex.immutables.id-test.svg?label=travis)](https://travis-ci.org/tmtron/ex.immutables.id-test/builds) 
+
 ## Implementation
 The fields of both classes are defined in a common base-class:
 
