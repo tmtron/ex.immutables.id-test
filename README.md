@@ -55,3 +55,6 @@ public abstract class DsInstanceDo extends DsInstanceBase {
     }
 }
 ```
+
+## Wrapper Types
+The example in the `longwrapper` package shows the usage of [Wrapper Types](https://immutables.github.io/immutable.html#wrapper-types)
