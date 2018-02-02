@@ -6,6 +6,7 @@ Using [immutables](https://immutables.github.io/) for ValueObjects and DomainObj
 ## Implementation
 The fields of both classes are defined in a common base-class:
 
+Example: [DsInstanceBase](src/main/java/com/tmtron/ex/immutables/DsInstanceBase.java)
 ```java
 public abstract class DsInstanceBase {
     public abstract String computerName();
@@ -18,6 +19,7 @@ ValueObjects are compared by their content: e.g. the value of all fields.
 We simply need to extend the base-class and add the `Immutable` annotation.  
 We can also add a convenience method to build a DomainObject.
 
+Example: [DsInstanceVo](src/main/java/com/tmtron/ex/immutables/DsInstanceVo.java)
 ```java
 @Value.Immutable
 public abstract class DsInstanceVo extends DsInstanceBase {
@@ -32,8 +34,9 @@ public abstract class DsInstanceVo extends DsInstanceBase {
 
 ## DomainObject
 DomainObjects are compared by a single Id field (primitive, any Object or a ValueObject).  
-We extend the base-class, add the `Immutable` annotation, add an id field and provide a custom implemenation of `equals` and `hashCode`
+We extend the base-class, add the `Immutable` annotation, add an id field and provide a custom implemenation of `equals` and `hashCode`.
 
+Example: [DsInstanceDo](src/main/java/com/tmtron/ex/immutables/DsInstanceDo.java)
 ```java
 @Value.Immutable
 public abstract class DsInstanceDo extends DsInstanceBase {
@@ -59,4 +62,4 @@ public abstract class DsInstanceDo extends DsInstanceBase {
 ```
 
 ## Wrapper Types
-The example in the `longwrapper` package shows the usage of [Wrapper Types](https://immutables.github.io/immutable.html#wrapper-types)
+The example in the [longwrapper](src/main/java/com/tmtron/ex/immutables/longwrapper) package shows the usage of [Wrapper Types](https://immutables.github.io/immutable.html#wrapper-types)
