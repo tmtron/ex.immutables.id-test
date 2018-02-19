@@ -7,7 +7,7 @@ import org.immutables.value.Value;
 @Value.Immutable
 public abstract class WrapIdVo extends WrapIdBase {
 
-    public WrapIdDo toDomainObject(LongId id) {
+    public WrapIdDo toDomainObject(InstanceId id) {
         return ImmutableWrapIdDo.builder().from(this)
                 .id(id)
                 .build();

@@ -8,7 +8,7 @@ import org.immutables.value.Value;
 @Value.Immutable
 public abstract class WrapIdDo extends WrapIdBase {
 
-    public abstract LongId id();
+    public abstract InstanceId id();
 
     @Override
     public final boolean equals( Object o) {

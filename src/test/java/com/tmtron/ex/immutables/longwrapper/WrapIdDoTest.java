@@ -7,25 +7,25 @@ public class WrapIdDoTest {
 
     private final WrapIdDo do1a =
             ImmutableWrapIdDo.builder()
-                    .id(LongId.of(1L))
+                    .id(InstanceId.of(1L))
                     .computerName("pc1")
                     .macAddress("12").build();
 
     private final WrapIdDo do1b =
             ImmutableWrapIdDo.builder()
-                    .id(LongId.of(1L))
+                    .id(InstanceId.of(1L))
                     .computerName("pc1")
                     .macAddress("12").build();
 
     private final WrapIdDo do1c =
             ImmutableWrapIdDo.builder()
-                    .id(LongId.of(1L))
+                    .id(InstanceId.of(1L))
                     .computerName("pc2")
                     .macAddress("45").build();
 
     private final WrapIdDo do2 =
             ImmutableWrapIdDo.builder()
-                    .id(LongId.of(2L))
+                    .id(InstanceId.of(2L))
                     .computerName("pc2")
                     .macAddress("12").build();
 

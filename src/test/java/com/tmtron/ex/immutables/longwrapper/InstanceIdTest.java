@@ -5,11 +5,11 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class LongIdTest {
+public class InstanceIdTest {
 
-    private LongId id1a = LongId.of(1L);
-    private LongId id1b = LongId.of(1L);
-    private LongId id2 = LongId.of(2L);
+    private InstanceId id1a = InstanceId.of(1L);
+    private InstanceId id1b = InstanceId.of(1L);
+    private InstanceId id2 = InstanceId.of(2L);
 
     @Test
     public void testEquals() {
